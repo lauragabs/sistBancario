@@ -45,7 +45,7 @@ Este projeto implementa um sistema bancário em Java com diferentes tipos de con
     - Métodos: sacar(double) (com isenção), exibeLimiteIsencao().
 
 7. **SistemaBancario**: Classe principal que gerencia o sistema e exibe menus de interação.
-    - Métodos: main(), menu(), menus específicos para cada tipo de conta (ex: `menuContaBancaria()`).
+    - Métodos: main(), menu(), menus específicos para cada tipo de conta (ex: `menuContaEmpresarial()`).
 
 8. **MinhasExcecoes**: Classe de exceção personalizada para tratar operações inválidas.
 
