@@ -7,13 +7,13 @@ public class ContaCoEmpresarial extends ContaCo{
         this.taxaJurosEmprestimo = taxaJurosEmprestimo;
     }
 
-    public boolean solicitaEmprestimo(double valor){
-        if ((saldo + limitechequeEspeial) >= valor){
-            saldo += valor ;
-            return true;
+    public boolean solicitaEmprestimo(double valor) {
+        if ((saldo + limitechequeEspeial) >= valor) {
+            double valorComJuros = valor + (valor * (taxaJurosEmprestimo / 100));
+            saldo += valorComJuros; 
+            return true; 
         }
-        return false;
-
+        return false; 
     }
 
     @Override
